@@ -1,0 +1,13 @@
+{
+    "aluno": "Guilherme de Almeida Gama",
+    "questoes": [
+        {
+            "numero": 1,
+            "resposta": "Herança permite que um programa repasse suas funções para outro programa."
+        },
+        {
+            "numero": 2,
+            "resposta": "Polimorfismo faz com que os objetos sejam tratados por uma interface."
+        }
+    ]
+}

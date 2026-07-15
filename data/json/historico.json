@@ -1,0 +1,9 @@
+[
+    {
+        "id": 1,
+        "questao_id": 1,
+        "resposta_aluno": "Uma classe herda atributos da outra.",
+        "nota": 8,
+        "feedback": "Faltou mencionar métodos."
+    }
+]

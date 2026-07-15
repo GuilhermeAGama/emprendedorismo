@@ -1,0 +1,37 @@
+[
+    {
+        "questao_id": 1,
+        "disciplina_id": 1,
+        "enunciado": "Explique o conceito de herança.",
+        "resposta_modelo": "Herança permite que uma classe reutilize atributos e métodos de outra classe.",
+        "nota_maxima": 10
+    },
+    {
+        "questao_id": 2,
+        "disciplina_id": 1,
+        "enunciado": "O que é polimorfismo em programação orientada a objetos?",
+        "resposta_modelo": "Polimorfismo é a capacidade de diferentes classes responderem de maneira diferente à mesma mensagem ou método.",
+        "nota_maxima": 10
+    },
+    {
+        "questao_id": 3,
+        "disciplina_id": 1,
+        "enunciado": "Defina o conceito de encapsulamento.",
+        "resposta_modelo": "Encapsulamento é o princípio de ocultar os detalhes internos de uma classe e expor apenas o necessário através de métodos públicos.",
+        "nota_maxima": 10
+    },
+    {
+        "questao_id": 4,
+        "disciplina_id": "1",
+        "enunciado": "Como se deu o descobrimento do Brasil",
+        "resposta_modelo": "O Brasil foi descoberto em 1500, por Pedro Álvares Cabral, na tentativa de chegar a Índia",
+        "nota_maxima": 10
+    },
+    {
+        "questao_id": 5,
+        "disciplina_id": "1",
+        "enunciado": "Que circuito é esse, e explique suas partes",
+        "resposta_modelo": "Esse circuito é uma fonte de 12V, consiste em um trasformador que abaixa a tensão de 220 para 25V, seguido de um retificador com derivação central, um capacitor para deixar o sinal linear e um regulador de tensão de 12V",
+        "nota_maxima": 10
+    }
+]

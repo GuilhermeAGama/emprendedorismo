@@ -1,0 +1,5 @@
+ollama
+json
+chromadb
+sentence-transformers
+streamlit

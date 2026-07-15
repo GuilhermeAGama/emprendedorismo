@@ -1,0 +1,10 @@
+[
+    {
+        "disciplina_id": 1,
+        "nome": "Programação Orientada a Objetos"
+    },
+    {
+        "disciplina_id": 2,
+        "nome": "Banco de Dados"
+    }
+]

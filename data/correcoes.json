@@ -1,0 +1,276 @@
+[
+    {
+        "questao_id": 1,
+        "resposta_aluno": "Herança permite que uma classe reutilize atributos e métodos de outra classe.",
+        "nota": 9,
+        "feedback": "A resposta está correta e demonstra um bom entendimento do conceito de herança. A definição é concisa e precisa.",
+        "origem": "automatica",
+        "id": 1
+    },
+    {
+        "questao_id": 1,
+        "resposta_aluno": "Herança permite que uma subclasse herde os atributos e métodos de uma superclasse.",
+        "nota": 9,
+        "feedback": "A resposta do aluno demonstra um bom entendimento do conceito de herança, especificando corretamente que uma subclasse herda atributos e métodos de uma superclasse. A resposta está completa e alinhada com a definição fornecida na resposta modelo.",
+        "origem": "automatica",
+        "id": 2
+    },
+    {
+        "questao_id": 1,
+        "resposta_aluno": "Herança permite que o programa seja executado por outro.",
+        "nota": 1.0,
+        "feedback": "Resposta demonstra falta de entendimento do conceito de herança",
+        "id": 3
+    },
+    {
+        "questao_id": 1,
+        "resposta_aluno": "Herança permite que o programa seja executado porum subprograma.",
+        "nota": 1.0,
+        "feedback": "Falta de entendimento do conceito de herança",
+        "id": 4
+    },
+    {
+        "questao_id": 1,
+        "resposta_aluno": "Herança permite que o programa seja executado por outro.",
+        "nota": 1.0,
+        "feedback": "Falta de entendimento",
+        "id": 5
+    },
+    {
+        "questao_id": 1,
+        "resposta_aluno": "Herança permite que o programa seja executado por outro.",
+        "nota": 1.0,
+        "feedback": "Falta de entendimento",
+        "id": 6
+    },
+    {
+        "questao_id": 1,
+        "resposta_aluno": "Herança permite que o programa seja executado por outro.",
+        "nota": 1.0,
+        "feedback": "Falta de entendimento",
+        "id": 7
+    },
+    {
+        "questao_id": 1,
+        "resposta_aluno": "Herança faz com que o programa repita instruções de outro.",
+        "nota": 0.0,
+        "feedback": "Falta de entendimento",
+        "id": 8
+    },
+    {
+        "questao_id": 1,
+        "resposta_aluno": "Herança faz os metodos se repetirem",
+        "nota": 3.0,
+        "feedback": "Falta de entendimento",
+        "origem": "manual",
+        "id": 9
+    },
+    {
+        "questao_id": 1,
+        "resposta_aluno": "Herança permite que os métodos e atributos sejam reutilizados por outra classe",
+        "nota": 9.0,
+        "feedback": "bom entendimento do conceito de herança",
+        "origem": "manual",
+        "id": 10
+    },
+    {
+        "questao_id": 1,
+        "resposta_aluno": "Herança permite que os atributos e métodos sejam reutilizados por outra classe",
+        "nota": 8,
+        "feedback": "A resposta demonstra um bom entendimento do conceito de herança, indicando que ela permite a reutilização de atributos e métodos de outra classe. No entanto, poderia ser mais completa ao mencionar o objetivo da herança: promover a organização e reutilização de código em classes.",
+        "origem": "automatica",
+        "id": 11
+    },
+    {
+        "questao_id": 4,
+        "resposta_aluno": "Descoberto por Pedro Álvares Cabral, enquanto estava navegando em direção à Índia",
+        "nota": 8,
+        "feedback": "A resposta demonstra um bom entendimento do evento central: a expedição de Cabral com destino à Índia foi o marco da chegada dos portugueses ao Brasil. No entanto, falta mencionar que a chegada ocorreu em terras brasileiras e não na rota para a Índia.",
+        "origem": "automatica",
+        "id": 12
+    },
+    {
+        "questao_id": 4,
+        "resposta_aluno": "Descoberto por Camões, enquanto estava navegando em direção ao ártico",
+        "nota": 1,
+        "feedback": "A resposta apresenta um erro fundamental ao atribuir a descoberta do Brasil a Camões e associá-la à navegação em direção ao Ártico. A data correta da chegada de Cabral ao Brasil é 1500, e a rota era para chegar à Índia.",
+        "origem": "automatica",
+        "id": 13
+    },
+    {
+        "questao_id": 4,
+        "resposta_aluno": "Descoberto pelos portugueses que navegavam para Índia em 1500",
+        "nota": 8,
+        "feedback": "A resposta demonstra um bom entendimento do evento central: a chegada dos portugueses ao Brasil em 1500, na rota para a Índia. No entanto, falta especificar o nome do líder da expedição, Pedro Álvares Cabral, que é um detalhe importante para a compreensão completa do contexto histórico.",
+        "origem": "automatica",
+        "id": 14
+    },
+    {
+        "questao_id": 1,
+        "resposta_aluno": "Herança permite que uma classe reutilize atributos e métodos de outra classe.",
+        "nota": 9,
+        "feedback": "A resposta demonstra um bom entendimento do conceito de herança, replicando a definição fornecida no modelo.",
+        "origem": "automatica",
+        "id": 15
+    },
+    {
+        "questao_id": 1,
+        "resposta_aluno": "Herança é um negocio louco",
+        "nota": 1.0,
+        "feedback": "errado",
+        "origem": "manual",
+        "id": 16
+    },
+    {
+        "questao_id": 1,
+        "resposta_aluno": "Faz com que o código seja reusado depois",
+        "nota": 1.0,
+        "feedback": "Falta de entendimento do conceito",
+        "origem": "manual",
+        "id": 17
+    },
+    {
+        "questao_id": 1,
+        "resposta_aluno": "Faz com que o código seja reusado",
+        "nota": 1.0,
+        "feedback": "Falta de entendimento do conceito",
+        "origem": "manual",
+        "id": 18
+    },
+    {
+        "questao_id": 1,
+        "resposta_aluno": "Faz com que o código seja reutilizado",
+        "nota": 1.0,
+        "feedback": "Falta de entendimento",
+        "origem": "manual",
+        "id": 19
+    },
+    {
+        "questao_id": 1,
+        "resposta_aluno": "Faz com que o código seja utilizado novamente",
+        "nota": 1.0,
+        "feedback": "Falta de entendimento",
+        "origem": "manual",
+        "id": 20
+    },
+    {
+        "questao_id": 1,
+        "resposta_aluno": "Faz com que o código seja utilizado de novo",
+        "nota": 1.0,
+        "feedback": "Falta de entendimento",
+        "origem": "manual",
+        "id": 21
+    },
+    {
+        "questao_id": 1,
+        "resposta_aluno": "Faz com que o código possa ser utilizado de novo",
+        "nota": 1.0,
+        "feedback": "Falta de conhecimento",
+        "origem": "manual",
+        "id": 22
+    },
+    {
+        "questao_id": 1,
+        "resposta_aluno": "Faz com que o código possa ser utilizado de novo",
+        "nota": 1.0,
+        "feedback": "Falta de conhecimento",
+        "origem": "manual",
+        "id": 23
+    },
+    {
+        "questao_id": 1,
+        "resposta_aluno": "Faz com que o código possa ser utilizado de novo",
+        "nota": 1.0,
+        "feedback": "Falta de conhecimento",
+        "origem": "automatica",
+        "id": 24
+    },
+    {
+        "questao_id": 1,
+        "resposta_aluno": "Faz com que o código possa ser utilizado de novamente",
+        "nota": 1.0,
+        "feedback": "Falta de conhecimento",
+        "origem": "manual",
+        "id": 25
+    },
+    {
+        "questao_id": 1,
+        "resposta_aluno": "Faz com que o código possa ser reutilizado",
+        "nota": 1.0,
+        "feedback": "Falta de entendimento",
+        "origem": "automatica",
+        "id": 26
+    },
+    {
+        "questao_id": 1,
+        "resposta_aluno": "Faz com que o programa possa ser reutilizado",
+        "nota": 1.0,
+        "feedback": "Falta de conhecimento",
+        "origem": "manual",
+        "id": 27
+    },
+    {
+        "questao_id": 1,
+        "resposta_aluno": "Faz com que o programa possa ser utilizado novamente",
+        "nota": 1.0,
+        "feedback": "Falta de conhecimento",
+        "origem": "manual",
+        "id": 28
+    },
+    {
+        "questao_id": 1,
+        "resposta_aluno": "Permite repassar suas caracteristicas para outro programa",
+        "nota": 1.0,
+        "feedback": "Incorreto",
+        "origem": "manual",
+        "id": 29
+    },
+    {
+        "questao_id": 1,
+        "resposta_aluno": "Permite repassar suas caracteristicas para outro código",
+        "nota": 1.0,
+        "feedback": "Falta de entendimento do conceito",
+        "origem": "automatica",
+        "id": 30
+    },
+    {
+        "questao_id": 1,
+        "resposta_aluno": "Permite que uma classe pai repasse seus métodos e atributos para uma classe filha.",
+        "nota": 8.0,
+        "feedback": "bom entendimento do conceito de herança",
+        "origem": "automatica",
+        "id": 31
+    },
+    {
+        "questao_id": 4,
+        "resposta_aluno": "Descoberto em 1500 pelos portugueses liderados por Pedro Álvares Cabral, que navegava em direção à Índia",
+        "nota": 8.0,
+        "feedback": "Resposta correta, demonstrou domínio sobre o conhecimento",
+        "origem": "manual",
+        "id": 32
+    },
+    {
+        "questao_id": 4,
+        "resposta_aluno": "Descoberto pelos portugueses liderados por Jô Soares, que navegava à Índia no ano de 1500 ",
+        "nota": 5.0,
+        "feedback": "Resposta parcialmente correta, lider da expedição incorretos, Pedro Álvares Cabral foi o lider da expedição",
+        "origem": "manual",
+        "id": 33
+    },
+    {
+        "questao_id": 4,
+        "resposta_aluno": "Descoberto pelos portugueses liderados por Jesus Cristo, que navegava à Índia no ano de 1500 ",
+        "nota": 5.0,
+        "feedback": "Parcialmente correto, Lider da expedição errado",
+        "origem": "manual",
+        "id": 34
+    },
+    {
+        "questao_id": 4,
+        "resposta_aluno": "Descoberto pelos portugueses liderados por Seu zé, que navegava à Índia no ano de 1500 ",
+        "nota": 5.0,
+        "feedback": "Lider incorreto da expedição, parcialmente correta",
+        "origem": "manual",
+        "id": 35
+    }
+]

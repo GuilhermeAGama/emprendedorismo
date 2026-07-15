@@ -1,0 +1,16 @@
+[
+    {
+        "questao_id": 1,
+        "disciplina_id": 1,
+        "enunciado": "Explique o conceito de herança.",
+        "resposta_modelo": "Herança permite que uma classe reutilize atributos e métodos de outra classe.",
+        "nota_maxima": 10
+    },
+    {
+        "questao_id": 2,
+        "disciplina_id": 1,
+        "enunciado": "Explique polimorfismo.",
+        "resposta_modelo": "Polimorfismo permite que objetos de diferentes classes sejam tratados de forma uniforme por meio de uma interface comum.",
+        "nota_maxima": 10
+    }
+]
