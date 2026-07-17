@@ -19,6 +19,17 @@ resposta_modelo = st.text_area(
     "Resposta modelo"
 )
 
+criterios = st.text_area(
+    "Critérios de avaliação",
+    height=180,
+    placeholder="""
+Exemplo:
+- O aluno deve demonstrar compreensão do conceito X. 2 pontos
+- O aluno deve apresentar um exemplo prático do conceito Y. 3 pontos
+- O aluno deve identificar aplicações do conceito Z. 5 pontos
+"""
+)
+
 nota_maxima = st.number_input(
     "Nota máxima",
     min_value=0,
@@ -34,6 +45,8 @@ if st.button("Salvar"):
         enunciado,
 
         resposta_modelo,
+        
+        criterios,
 
         nota_maxima
 

@@ -25,10 +25,14 @@ class CorrectionService:
         )
 
         resultado = self.evaluator.evaluate(
+            questao["enunciado"],
             questao["resposta_modelo"],
             resposta_aluno,
+            questao["criterios"],
             exemplos
         )
+        
+        resultado["exemplos"] = exemplos
 
         return resultado
     
@@ -61,7 +65,7 @@ class CorrectionService:
             "resposta_aluno": resposta_aluno,
             "nota": resultado["nota"],
             "feedback": resultado["justificativa"],
-            "origem": "automatica"
+            "origem": "automatica",
         }
 
         self.correction_repository.add(correcao)

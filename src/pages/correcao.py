@@ -1,3 +1,5 @@
+from turtle import delay
+
 import streamlit as st
 
 from dependecies import (
@@ -7,9 +9,9 @@ from dependecies import (
 
 st.title("Correção de Questões")
 
-# ===============================
-# Carrega questões
-# ===============================
+# ======================================================
+# Seleção da questão
+# ======================================================
 
 questions = question_service.list_questions()
 
@@ -31,18 +33,33 @@ resposta = st.text_area(
     "Resposta do aluno"
 )
 
-# ===============================
+# ======================================================
 # Corrigir
-# ===============================
+# ======================================================
 
-if st.button("Corrigir"):
+if st.button("Corrigir", use_container_width=True):
+
+    if not resposta.strip():
+        st.warning("Digite a resposta do aluno.")
+        st.stop()
 
     question = options[selected]
 
-    resultado = correction_service.correct(
-        question["questao_id"],
-        resposta
-    )
+    with st.status("🤖 Corrigindo resposta...", expanded=True) as status:
+
+        st.write("🔎 Buscando respostas semelhantes...")
+
+        resultado = correction_service.correct(
+            question["questao_id"],
+            resposta
+        )
+
+        st.write("📝 Gerando avaliação...")
+
+        status.update(
+            label="✅ Correção concluída!",
+            state="complete"
+        )
 
     st.session_state["correcao"] = {
         "questao_id": question["questao_id"],
@@ -50,9 +67,11 @@ if st.button("Corrigir"):
         "resultado": resultado
     }
 
-# ===============================
-# Exibe resultado
-# ===============================
+    st.rerun()
+
+# ======================================================
+# Resultado
+# ======================================================
 
 correcao = st.session_state.get("correcao")
 
@@ -62,43 +81,191 @@ if correcao:
 
     st.divider()
 
-    st.metric(
-        "Nota sugerida",
-        resultado["nota"]
-    )
+    st.subheader("Avaliação da IA")
 
-    st.metric(
-        "Confiança",
-        f"{resultado['confianca']*100:.1f}%"
-    )
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.metric(
+            "Nota sugerida",
+            resultado["nota"]
+        )
+
+    with col2:
+        st.metric(
+            "Confiança",
+            f"{resultado['confianca']:.1%}"
+        )
+
+    st.progress(resultado["confianca"])
+
+    st.write("### Justificativa")
 
     st.write(resultado["justificativa"])
-    
-    st.write(resultado["justificativa"])
 
-    # ===========================
+    # ==================================================
+    # Respostas similares
+    # ==================================================
+
+    st.divider()
+
+    st.subheader("Respostas similares encontradas")
+
+    exemplos = resultado.get("exemplos", [])
+
+    if len(exemplos) == 0:
+
+        st.info(
+            "Nenhuma resposta semelhante encontrada."
+        )
+
+    else:
+
+        exemplos = sorted(
+            exemplos,
+            key=lambda x: x["distancia"]
+        )
+
+        melhor = exemplos[0]
+
+        st.success("Resposta mais semelhante")
+
+        st.write("**Resposta**")
+
+        st.write(
+            melhor["resposta"]
+        )
+
+        c1, c2 = st.columns(2)
+
+        with c1:
+
+            st.metric(
+                "Nota",
+                melhor["nota"]
+            )
+
+        with c2:
+
+            st.metric(
+                "Distância",
+                f"{melhor['distancia']:.3f}"
+            )
+
+        st.write(
+            "**Feedback**"
+        )
+
+        st.write(
+            melhor["feedback"]
+        )
+
+        if len(exemplos) > 1:
+
+            with st.expander(
+                "Outras respostas semelhantes"
+            ):
+
+                for exemplo in exemplos[1:]:
+
+                    st.markdown("---")
+
+                    st.write(
+                        "**Resposta**"
+                    )
+
+                    st.write(
+                        exemplo["resposta"]
+                    )
+
+                    col1, col2 = st.columns(2)
+
+                    with col1:
+
+                        st.metric(
+                            "Nota",
+                            exemplo["nota"]
+                        )
+
+                    with col2:
+
+                        st.metric(
+                            "Distância",
+                            f"{exemplo['distancia']:.3f}"
+                        )
+
+                    st.write(
+                        "**Feedback**"
+                    )
+
+                    st.write(
+                        exemplo["feedback"]
+                    )
+
+    # ==================================================
+    # Correção final
+    # ==================================================
+
+    st.divider()
+
+    st.subheader(
+        "Correção Final"
+    )
+
+    nota = st.number_input(
+        "Nota final",
+        min_value=0.0,
+        max_value=10.0,
+        value=float(resultado["nota"]),
+        step=0.5
+    )
+
+    feedback = st.text_area(
+        "Feedback do professor",
+        value=resultado["justificativa"]
+    )
+
+    col1, col2 = st.columns(2)
+
+    # ==============================================
+    # Aceitar IA
+    # ==============================================
+
+    with col1:
+
+        if st.button(
+            "Salvar como correção automática",
+            use_container_width=True
+        ):
+
+            correction_service.save_automatic_correction(
+
+                correcao["questao_id"],
+
+                correcao["resposta"],
+
+                resultado
+
+            )
+
+            del st.session_state["correcao"]
+
+            st.success(
+                "Correção salva!"
+            )
+
+            st.rerun()
+
+    # ==============================================
     # Correção manual
-    # ===========================
+    # ==============================================
 
-    if resultado["confianca"] < 0.90:
+    with col2:
 
-        st.warning(
-            "Baixa confiança. Recomenda-se revisão manual."
-        )
-
-        nota = st.number_input(
-            "Nota do professor",
-            min_value=0.0,
-            max_value=10.0,
-            value=float(resultado["nota"]),
-            step=0.5
-        )
-
-        feedback = st.text_area(
-            "Feedback do professor"
-        )
-
-        if st.button("Salvar Correção Manual"):
+        if st.button(
+            "Salvar como correção manual",
+            use_container_width=True
+        ):
 
             correction_service.save_manual_correction(
 
@@ -112,28 +279,10 @@ if correcao:
 
             )
 
-            st.success("Correção salva com sucesso!")
-
             del st.session_state["correcao"]
 
-    # ===========================
-    # Aceitar automática
-    # ===========================
-
-    else:
-
-        if st.button("Aceitar Correção"):
-
-            correction_service.save_automatic_correction(
-
-                correcao["questao_id"],
-
-                correcao["resposta"],
-
-                resultado
-
+            st.success(
+                "Correção salva!"
             )
 
-            st.success("Correção salva com sucesso!")
-
-            del st.session_state["correcao"]
+            st.rerun()

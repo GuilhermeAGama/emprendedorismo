@@ -14,6 +14,7 @@ class QuestionService:
         disciplina_id,
         enunciado,
         resposta_modelo,
+        criterios,
         nota_maxima
     ):
 
@@ -34,6 +35,7 @@ class QuestionService:
             "questao_id": novo_id,
             "disciplina_id": disciplina_id,
             "enunciado": enunciado,
+            "criterios": criterios,
             "resposta_modelo": resposta_modelo,
             "nota_maxima": nota_maxima
         }

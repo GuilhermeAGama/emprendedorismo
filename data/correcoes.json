@@ -1,276 +1,66 @@
 [
     {
         "questao_id": 1,
-        "resposta_aluno": "Herança permite que uma classe reutilize atributos e métodos de outra classe.",
-        "nota": 9,
-        "feedback": "A resposta está correta e demonstra um bom entendimento do conceito de herança. A definição é concisa e precisa.",
-        "origem": "automatica",
+        "resposta_aluno": "Herança é um recurso da Programação Orientada a Objetos que permite que uma classe utilize atributos e métodos de outra classe. Dessa forma, evita-se a duplicação de código e facilita-se a reutilização. Um exemplo é uma classe Veiculo, da qual podem herdar classes como Carro e Moto, compartilhando características comuns e adicionando funcionalidades específicas.",
+        "nota": 10.0,
+        "feedback": "O aluno definiu corretamente o conceito de herança como um recurso da POO que permite a reutilização de atributos e métodos, evitando duplicação de código. O exemplo apresentado (classe Veiculo herdando Carro e Moto) é coerente e ilustra bem o conceito. A resposta atende plenamente aos critérios solicitados.",
+        "origem": "manual",
         "id": 1
     },
     {
         "questao_id": 1,
-        "resposta_aluno": "Herança permite que uma subclasse herde os atributos e métodos de uma superclasse.",
-        "nota": 9,
-        "feedback": "A resposta do aluno demonstra um bom entendimento do conceito de herança, especificando corretamente que uma subclasse herda atributos e métodos de uma superclasse. A resposta está completa e alinhada com a definição fornecida na resposta modelo.",
-        "origem": "automatica",
+        "resposta_aluno": "A herança permite criar uma nova classe com base em uma classe já existente. A nova classe herda os comportamentos e propriedades da classe original e pode modificá-los ou acrescentar novos recursos. Por exemplo, uma classe Funcionario pode servir como base para Professor e Administrador, que possuem características em comum, mas também comportamentos próprios.",
+        "nota": 10.0,
+        "feedback": "O aluno definiu corretamente o conceito de herança ao explicar que ela permite criar uma nova classe baseada em uma existente, herdando seus comportamentos e propriedades. O exemplo apresentado (classe Funcionario como base para Professor e Administrador) é coerente e ilustra bem a aplicação do conceito de reutilização de código. A resposta atende plenamente aos critérios solicitados.",
+        "origem": "manual",
         "id": 2
     },
     {
-        "questao_id": 1,
-        "resposta_aluno": "Herança permite que o programa seja executado por outro.",
-        "nota": 1.0,
-        "feedback": "Resposta demonstra falta de entendimento do conceito de herança",
+        "questao_id": 2,
+        "resposta_aluno": "Esse circuito é uma fonte de alimentação de 12V, consiste em um transformador que reduz a tensão de 110V para12V, um retificador de onda completa por derivação central com um capacitor para linearizar o sinal e por fim um regulador de tensão de 12V",
+        "nota": 8.0,
+        "feedback": "O aluno identificou corretamente a função principal do circuito (fonte de alimentação de 12V) e descreveu os componentes principais (transformador, retificador de onda completa por derivação central com capacitor, regulador de tensão). No entanto, houve um erro factual na descrição da entrada do transformador. O enunciado original mencionava uma redução de 220V para 12V (ou 25V, dependendo da interpretação), enquanto o aluno indicou a redução de 110V para 12V. Embora os componentes e a função estejam corretos, a descrição específica dos parâmetros do transformador está incorreta em relação ao contexto implícito ou esperado.",
+        "origem": "manual",
         "id": 3
     },
     {
-        "questao_id": 1,
-        "resposta_aluno": "Herança permite que o programa seja executado porum subprograma.",
-        "nota": 1.0,
-        "feedback": "Falta de entendimento do conceito de herança",
+        "questao_id": 2,
+        "resposta_aluno": "Esse circuito é uma fonte de alimentação de 12V, consiste em um transformador que reduz a tensão de 220V para 25V, um retificador de onda completa por derivação central com um capacitor para linearizar o sinal e por fim um regulador de tensão de 15V",
+        "nota": 8.0,
+        "feedback": "O aluno identificou corretamente a função principal do circuito (fonte de alimentação de 12V) e descreveu os componentes principais (transformador, retificador de onda completa por derivação central com capacitor, regulador de tensão). No entanto, houve um erro na especificação da tensão de saída do regulador de tensão (indicando 15V em vez dos 12V esperados pelo contexto geral), o que representa uma imprecisão nos detalhes técnicos. A descrição dos componentes e a função estão majoritariamente corretas.",
+        "origem": "manual",
         "id": 4
     },
     {
-        "questao_id": 1,
-        "resposta_aluno": "Herança permite que o programa seja executado por outro.",
-        "nota": 1.0,
-        "feedback": "Falta de entendimento",
+        "questao_id": 2,
+        "resposta_aluno": "Esse circuito é uma fonte de alimentação de 12V, consiste em um transformador que reduz a tensão de 220V para 25V, um retificador de onda completa por derivação central e por fim um regulador de tensão de 12V",
+        "nota": 8.0,
+        "feedback": "O aluno identificou corretamente a função principal do circuito (fonte de alimentação de 12V) e descreveu os componentes principais (transformador, retificador de onda completa por derivação central e regulador de tensão). A descrição dos parâmetros do transformador (redução de 220V para 25V) e o valor final do regulador de tensão (12V) estão em conformidade com a descrição fornecida pelo professor. A resposta é tecnicamente precisa.",
+        "origem": "manual",
         "id": 5
     },
     {
-        "questao_id": 1,
-        "resposta_aluno": "Herança permite que o programa seja executado por outro.",
-        "nota": 1.0,
-        "feedback": "Falta de entendimento",
+        "questao_id": 2,
+        "resposta_aluno": "Esse circuito é uma fonte de alimentação de 12V, consiste em um transformador que reduz a tensão de 220V para 25V, um retificador de onda completa por derivação central e por fim um regulador de tensão de 15V",
+        "nota": 6.0,
+        "feedback": "O aluno identificou corretamente a função principal do circuito (fonte de alimentação de 12V) e descreveu os componentes principais (transformador, retificador de onda completa por derivação central, regulador de tensão). A descrição dos parâmetros do transformador (redução de 220V para 25V) está correta. O erro na especificação da tensão de saída do regulador de tensão e a falta do capacitor de linearização é uma imprecisão nos detalhes técnicos, mas não invalida a descrição dos componentes e da função. Com 2 erros a nota foi reduzida de 10 para 6",
+        "origem": "manual",
         "id": 6
     },
     {
-        "questao_id": 1,
-        "resposta_aluno": "Herança permite que o programa seja executado por outro.",
-        "nota": 1.0,
-        "feedback": "Falta de entendimento",
+        "questao_id": 2,
+        "resposta_aluno": "Esse circuito é uma fonte de alimentação de 12V, consiste em um transformador que reduz a tensão de 110V para 15V, um retificador de onda completa por derivação central com capacitor para linearizar o sinal e por fim um regulador de tensão de 15V",
+        "nota": 6.0,
+        "feedback": "O aluno identificou corretamente a função principal do circuito (fonte de alimentação de 12V). Os componentes principais (transformador, retificador de onda completa por derivação central com capacitor, regulador de tensão) foram mencionados. No entanto, houve imprecisões nos detalhes técnicos dos parâmetros do transformador e do regulador de tensão em relação ao contexto esperado ou aos exemplos fornecidos. A descrição da redução de tensão no transformador (110V para 15V) e a especificação da tensão de saída do regulador de tensão (15V) não correspondem exatamente à descrição esperada, o que resulta na perda de pontos nos detalhes técnicos.",
+        "origem": "automatica",
         "id": 7
     },
     {
-        "questao_id": 1,
-        "resposta_aluno": "Herança faz com que o programa repita instruções de outro.",
-        "nota": 0.0,
-        "feedback": "Falta de entendimento",
+        "questao_id": 2,
+        "resposta_aluno": "Esse circuito é uma fonte de alimentação de 15V, consiste em um transformador que reduz a tensão de 110V para 20, um retificador de meia onda por ponte e por fim um regulador de tensão de 15V",
+        "nota": 1.0,
+        "feedback": "O aluno errou a identificação da função principal do circuito (fonte de alimentação). A resposta afirma que o circuito é uma fonte de alimentação de 15V, enquanto o contexto implícito e os exemplos sugerem uma fonte de 12V. Além disso, houve imprecisões nos detalhes técnicos dos componentes descritos (redução de tensão no transformador e tipo de retificador), o que resulta em zero acertos nos critérios gerais.",
+        "origem": "manual",
         "id": 8
-    },
-    {
-        "questao_id": 1,
-        "resposta_aluno": "Herança faz os metodos se repetirem",
-        "nota": 3.0,
-        "feedback": "Falta de entendimento",
-        "origem": "manual",
-        "id": 9
-    },
-    {
-        "questao_id": 1,
-        "resposta_aluno": "Herança permite que os métodos e atributos sejam reutilizados por outra classe",
-        "nota": 9.0,
-        "feedback": "bom entendimento do conceito de herança",
-        "origem": "manual",
-        "id": 10
-    },
-    {
-        "questao_id": 1,
-        "resposta_aluno": "Herança permite que os atributos e métodos sejam reutilizados por outra classe",
-        "nota": 8,
-        "feedback": "A resposta demonstra um bom entendimento do conceito de herança, indicando que ela permite a reutilização de atributos e métodos de outra classe. No entanto, poderia ser mais completa ao mencionar o objetivo da herança: promover a organização e reutilização de código em classes.",
-        "origem": "automatica",
-        "id": 11
-    },
-    {
-        "questao_id": 4,
-        "resposta_aluno": "Descoberto por Pedro Álvares Cabral, enquanto estava navegando em direção à Índia",
-        "nota": 8,
-        "feedback": "A resposta demonstra um bom entendimento do evento central: a expedição de Cabral com destino à Índia foi o marco da chegada dos portugueses ao Brasil. No entanto, falta mencionar que a chegada ocorreu em terras brasileiras e não na rota para a Índia.",
-        "origem": "automatica",
-        "id": 12
-    },
-    {
-        "questao_id": 4,
-        "resposta_aluno": "Descoberto por Camões, enquanto estava navegando em direção ao ártico",
-        "nota": 1,
-        "feedback": "A resposta apresenta um erro fundamental ao atribuir a descoberta do Brasil a Camões e associá-la à navegação em direção ao Ártico. A data correta da chegada de Cabral ao Brasil é 1500, e a rota era para chegar à Índia.",
-        "origem": "automatica",
-        "id": 13
-    },
-    {
-        "questao_id": 4,
-        "resposta_aluno": "Descoberto pelos portugueses que navegavam para Índia em 1500",
-        "nota": 8,
-        "feedback": "A resposta demonstra um bom entendimento do evento central: a chegada dos portugueses ao Brasil em 1500, na rota para a Índia. No entanto, falta especificar o nome do líder da expedição, Pedro Álvares Cabral, que é um detalhe importante para a compreensão completa do contexto histórico.",
-        "origem": "automatica",
-        "id": 14
-    },
-    {
-        "questao_id": 1,
-        "resposta_aluno": "Herança permite que uma classe reutilize atributos e métodos de outra classe.",
-        "nota": 9,
-        "feedback": "A resposta demonstra um bom entendimento do conceito de herança, replicando a definição fornecida no modelo.",
-        "origem": "automatica",
-        "id": 15
-    },
-    {
-        "questao_id": 1,
-        "resposta_aluno": "Herança é um negocio louco",
-        "nota": 1.0,
-        "feedback": "errado",
-        "origem": "manual",
-        "id": 16
-    },
-    {
-        "questao_id": 1,
-        "resposta_aluno": "Faz com que o código seja reusado depois",
-        "nota": 1.0,
-        "feedback": "Falta de entendimento do conceito",
-        "origem": "manual",
-        "id": 17
-    },
-    {
-        "questao_id": 1,
-        "resposta_aluno": "Faz com que o código seja reusado",
-        "nota": 1.0,
-        "feedback": "Falta de entendimento do conceito",
-        "origem": "manual",
-        "id": 18
-    },
-    {
-        "questao_id": 1,
-        "resposta_aluno": "Faz com que o código seja reutilizado",
-        "nota": 1.0,
-        "feedback": "Falta de entendimento",
-        "origem": "manual",
-        "id": 19
-    },
-    {
-        "questao_id": 1,
-        "resposta_aluno": "Faz com que o código seja utilizado novamente",
-        "nota": 1.0,
-        "feedback": "Falta de entendimento",
-        "origem": "manual",
-        "id": 20
-    },
-    {
-        "questao_id": 1,
-        "resposta_aluno": "Faz com que o código seja utilizado de novo",
-        "nota": 1.0,
-        "feedback": "Falta de entendimento",
-        "origem": "manual",
-        "id": 21
-    },
-    {
-        "questao_id": 1,
-        "resposta_aluno": "Faz com que o código possa ser utilizado de novo",
-        "nota": 1.0,
-        "feedback": "Falta de conhecimento",
-        "origem": "manual",
-        "id": 22
-    },
-    {
-        "questao_id": 1,
-        "resposta_aluno": "Faz com que o código possa ser utilizado de novo",
-        "nota": 1.0,
-        "feedback": "Falta de conhecimento",
-        "origem": "manual",
-        "id": 23
-    },
-    {
-        "questao_id": 1,
-        "resposta_aluno": "Faz com que o código possa ser utilizado de novo",
-        "nota": 1.0,
-        "feedback": "Falta de conhecimento",
-        "origem": "automatica",
-        "id": 24
-    },
-    {
-        "questao_id": 1,
-        "resposta_aluno": "Faz com que o código possa ser utilizado de novamente",
-        "nota": 1.0,
-        "feedback": "Falta de conhecimento",
-        "origem": "manual",
-        "id": 25
-    },
-    {
-        "questao_id": 1,
-        "resposta_aluno": "Faz com que o código possa ser reutilizado",
-        "nota": 1.0,
-        "feedback": "Falta de entendimento",
-        "origem": "automatica",
-        "id": 26
-    },
-    {
-        "questao_id": 1,
-        "resposta_aluno": "Faz com que o programa possa ser reutilizado",
-        "nota": 1.0,
-        "feedback": "Falta de conhecimento",
-        "origem": "manual",
-        "id": 27
-    },
-    {
-        "questao_id": 1,
-        "resposta_aluno": "Faz com que o programa possa ser utilizado novamente",
-        "nota": 1.0,
-        "feedback": "Falta de conhecimento",
-        "origem": "manual",
-        "id": 28
-    },
-    {
-        "questao_id": 1,
-        "resposta_aluno": "Permite repassar suas caracteristicas para outro programa",
-        "nota": 1.0,
-        "feedback": "Incorreto",
-        "origem": "manual",
-        "id": 29
-    },
-    {
-        "questao_id": 1,
-        "resposta_aluno": "Permite repassar suas caracteristicas para outro código",
-        "nota": 1.0,
-        "feedback": "Falta de entendimento do conceito",
-        "origem": "automatica",
-        "id": 30
-    },
-    {
-        "questao_id": 1,
-        "resposta_aluno": "Permite que uma classe pai repasse seus métodos e atributos para uma classe filha.",
-        "nota": 8.0,
-        "feedback": "bom entendimento do conceito de herança",
-        "origem": "automatica",
-        "id": 31
-    },
-    {
-        "questao_id": 4,
-        "resposta_aluno": "Descoberto em 1500 pelos portugueses liderados por Pedro Álvares Cabral, que navegava em direção à Índia",
-        "nota": 8.0,
-        "feedback": "Resposta correta, demonstrou domínio sobre o conhecimento",
-        "origem": "manual",
-        "id": 32
-    },
-    {
-        "questao_id": 4,
-        "resposta_aluno": "Descoberto pelos portugueses liderados por Jô Soares, que navegava à Índia no ano de 1500 ",
-        "nota": 5.0,
-        "feedback": "Resposta parcialmente correta, lider da expedição incorretos, Pedro Álvares Cabral foi o lider da expedição",
-        "origem": "manual",
-        "id": 33
-    },
-    {
-        "questao_id": 4,
-        "resposta_aluno": "Descoberto pelos portugueses liderados por Jesus Cristo, que navegava à Índia no ano de 1500 ",
-        "nota": 5.0,
-        "feedback": "Parcialmente correto, Lider da expedição errado",
-        "origem": "manual",
-        "id": 34
-    },
-    {
-        "questao_id": 4,
-        "resposta_aluno": "Descoberto pelos portugueses liderados por Seu zé, que navegava à Índia no ano de 1500 ",
-        "nota": 5.0,
-        "feedback": "Lider incorreto da expedição, parcialmente correta",
-        "origem": "manual",
-        "id": 35
     }
 ]
