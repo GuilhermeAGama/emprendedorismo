@@ -12,11 +12,13 @@ st.title("Cadastro de Questões")
 disciplina = st.text_input("ID da Disciplina")
 
 enunciado = st.text_area(
-    "Enunciado"
+    "Enunciado",
+    placeholder="""Explique o conceito de X e sua aplicação em Y. Forneça exemplos práticos e discuta as implicações do conceito em diferentes contextos."""
 )
 
 resposta_modelo = st.text_area(
-    "Resposta modelo"
+    "Resposta modelo",
+    placeholder="""O conceito de X é fundamental para entender Y. Ele se aplica em diversas situações, como A, B e C. Além disso, é importante considerar Z ao analisar o conceito."""
 )
 
 criterios = st.text_area(

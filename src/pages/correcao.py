@@ -47,8 +47,6 @@ if st.button("Corrigir", use_container_width=True):
 
     with st.status("🤖 Corrigindo resposta...", expanded=True) as status:
 
-        st.write("Pensando...")
-
         resultado = correction_service.correct(
             question["questao_id"],
             resposta
@@ -126,47 +124,14 @@ if correcao:
             key=lambda x: x["distancia"]
         )
 
-        melhor = exemplos[0]
-
-        st.success("Resposta mais semelhante")
-
-        st.write("**Resposta**")
-
-        st.write(
-            melhor["resposta"]
-        )
-
-        c1, c2 = st.columns(2)
-
-        with c1:
-
-            st.metric(
-                "Nota",
-                melhor["nota"]
-            )
-
-        with c2:
-
-            st.metric(
-                "Distância",
-                f"{melhor['distancia']:.3f}"
-            )
-
-        st.write(
-            "**Feedback**"
-        )
-
-        st.write(
-            melhor["feedback"]
-        )
 
         if len(exemplos) > 1:
 
             with st.expander(
-                "Outras respostas semelhantes"
+                "Respostas semelhantes"
             ):
 
-                for exemplo in exemplos[1:]:
+                for exemplo in exemplos:
 
                     st.markdown("---")
 
@@ -190,8 +155,8 @@ if correcao:
                     with col2:
 
                         st.metric(
-                            "Distância",
-                            f"{exemplo['distancia']:.3f}"
+                            "Similaridade semântica",
+                            f"{1 - exemplo['distancia']:.3f}"
                         )
 
                     st.write(
@@ -221,7 +186,7 @@ if correcao:
     )
 
     feedback = st.text_area(
-        "Feedback do professor",
+        "Feedback",
         value=resultado["justificativa"]
     )
 
