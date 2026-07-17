@@ -47,7 +47,7 @@ if st.button("Corrigir", use_container_width=True):
 
     with st.status("🤖 Corrigindo resposta...", expanded=True) as status:
 
-        st.write("🔎 Buscando respostas semelhantes...")
+        st.write("Pensando...")
 
         resultado = correction_service.correct(
             question["questao_id"],
